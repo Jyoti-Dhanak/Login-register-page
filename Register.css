@@ -1,15 +1,133 @@
-* {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-}
-
-html {
-    background-image: url("/Assets/bg-image.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
-    width: 100vw;
+    background-color: #f5f5f5;
 }
 
+.container {
+    display: flex;
+    width: 100vw;
+    background-color: #fff;
+    overflow: hidden;
+    height:100vh;
+}
+ .login-credentials{
+    width:31vw;
+    height:75vh;
+    margin-left:80px;
+    margin-top:60px;
+ }
+.signin-form, .illustration {
+    padding: 20px;
+    border-radius:15px;
+}
+
+.signin-form {
+    max-width: 500px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+.txt{
+    color:blue
+}
+
+h2 {
+    font-size:20px;
+    margin-top: 0;
+}
+p{
+    font-size:10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top:20px
+}
+
+label {
+    margin: 10px 0 5px;
+    font-size:10px;
+    color:rgb(140, 136, 136);
+}
+
+input[type="email"], input[type="password"] , input[type="text"]{
+    padding: 10px;
+    border: none;
+    border-bottom:1px solid black;
+    font-size: 5x;
+    border-bottom:1px solid rgb(140, 136, 136);
+}
+input::placeholder{
+    color:rgba(0, 8, 66, 1);
+}
+input:focus {
+    outline: none;
+}
+
+a{
+    font-size:10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top:40px;
+}
+
+.social-login {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.illustration {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 8, 66, 1);
+    color: white;
+    text-align: center;
+    margin-left:130px;
+    width:43vw;
+    height:89vh;
+    margin-top:13px
+}
+
+.illustration img {
+    max-width: 80%;
+    height: auto;
+}
+.illustration-content{
+    display:flex;
+    flex-direction:column;
+    align-items: flex-start;
+    width:90%;
+    padding-top:20px;
+    padding-left:30p;
+}
+.text{
+    font-size: 10px;
+    font-weight: lighter;
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .illustration {
+        display: none;
+    }
+}
