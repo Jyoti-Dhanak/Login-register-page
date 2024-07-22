@@ -4,32 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
     <link rel="stylesheet" href="Login.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
 </head>
 
 <body>
-    <div class="login-box">
-        <div class="sign-in">
-            <h4>Welcome to <span class="color">lorem</span><br><span class="font">Sign In</span></h4>
-            <h6><span class="color">No account?</span> <br> <a href="Register.html">Register</a></h6>
+    <div class="container">
+        <div class="signin-form">
+            <div class="logo">Your Logo</div>
+            <div class="login-credentials">
+                <h2>Sign in</h2>
+                <p>If you don’t have an account register <br> <br>You can <span class="txt">Register here!</span></p>
+                <form>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your Password" required>
+                    <div class="options">
+                        <label><input type="checkbox" name="remember"> Remember me</label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit">Login</button>
+                </form>
+                <div class="social-login">
+                    <p>or continue with</p>
+                    <div class="social-icons">
+                        <i class="fa fa-facebook-official"></i>
+                        <i class="fa fa-apple"></i>
+                        <i class="fa fa-google"></i>
+                    </div>
+                </div>
+            </div>
         </div>
-        <form action="#" enctype="application/x-www-form-urlencoded" method="get">
-            <div class="login-credentials">
-                <label for="username">Enter your username or email address</label>
-                <input type="text" id="username" placeholder="username or email" required>
+        <div class="illustration">
+            <img src="/Assets/bg.png" alt="Illustration">
+            <div>
+                <h1>Sign in to name</h1>
+                <p>Lorem Ipsum is simply</p>
             </div>
-            <div class="login-credentials">
-                <label for="passkey">Password</label>
-                <input type="password" id="passkey" placeholder="password" required>
-            </div>
-            <div class="forgot-password">
-                <h5><a href="#">forgot password?</a></h5>
-            </div>
-            <div class="submit-button">
-                <button type="submit">Sign In</button>
-            </div>
-        </form>
+        </div>
     </div>
 </body>
 
